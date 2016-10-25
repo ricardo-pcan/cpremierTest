@@ -1,0 +1,8 @@
+cpremierTest:
+    image: richarvey/nginx-php-fpm:latest
+    container_name: cpremierTest
+    ports:
+        - 8000:80
+    volumes:
+        - $PWD/src:/var/www/html
+    working_dir: /var/www/html
